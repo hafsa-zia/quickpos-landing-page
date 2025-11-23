@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuickPOS – Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation & Header (SCRUM-12) -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-mark">Q</span>
+                <span class="logo-text">QuickPOS</span>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="#contact" class="btn btn-outline">Sign Up</a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile nav -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-outline full-width">Sign Up</a>
+    </div>
+
+    <!-- Temporary main content until hero/features are built -->
+    <main class="placeholder-wrapper">
+        <h1>QuickPOS Landing Page</h1>
+        <p>Navigation bar implemented. Upcoming stories will add hero and features.</p>
+    </main>
+
+    <script>
+        // Mobile nav toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const mobileNav = document.getElementById('mobileNav');
+        if (navToggle && mobileNav) {
+            navToggle.addEventListener('click', () => {
+                mobileNav.classList.toggle('open');
+            });
+        }
+    </script>
+</body>
+</html>

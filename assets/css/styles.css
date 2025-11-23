@@ -1,0 +1,200 @@
+/* ===== Base ===== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-body: #020617;
+    --bg-header: rgba(15, 23, 42, 0.95);
+    --bg-soft: #111827;
+    --accent: #38bdf8;
+    --accent-strong: #0ea5e9;
+    --accent-soft: rgba(56, 189, 248, 0.18);
+    --text-main: #e5e7eb;
+    --text-muted: #9ca3af;
+    --border-subtle: #1f2937;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, #1f2937, #020617 60%);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.3rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.15s ease;
+}
+
+.btn-outline {
+    border-color: var(--accent-soft);
+    color: var(--text-main);
+    background: transparent;
+    box-shadow: 0 0 0 1px var(--accent-soft);
+}
+
+.btn-outline:hover {
+    background: var(--accent-soft);
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* Placeholder (until hero is built) */
+.placeholder-wrapper {
+    min-height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+.placeholder-wrapper p {
+    color: var(--text-muted);
+}
+
+/* ===== Header & Navigation (SCRUM-12) ===== */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    backdrop-filter: blur(16px);
+    background: linear-gradient(to bottom, var(--bg-header), rgba(15, 23, 42, 0.7));
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.logo-mark {
+    width: 28px;
+    height: 28px;
+    border-radius: 9px;
+    background: radial-gradient(circle at top left, var(--accent-strong), #0369a1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #020617;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.logo-text {
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    font-size: 0.95rem;
+}
+
+/* Desktop nav */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-decoration: none;
+    position: relative;
+}
+
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.35rem;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.15s ease;
+}
+
+.main-nav a:hover {
+    color: var(--text-main);
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+/* Mobile nav toggle */
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-main);
+    cursor: pointer;
+}
+
+/* Mobile nav panel */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background: #020617;
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 0.75rem 1.5rem 1rem;
+    gap: 0.5rem;
+}
+
+.mobile-nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.mobile-nav.open {
+    display: flex;
+}
+
+/* Responsive nav behaviour */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+    .btn-outline {
+        display: none;
+    }
+    .nav-toggle {
+        display: inline-flex;
+    }
+}
