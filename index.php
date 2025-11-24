@@ -129,6 +129,9 @@
                 <p class="section-subtitle">Tell us a bit about your business.</p>
             </div>
 
+            <?php if (isset($_GET['error']) && $_GET['error'] === 'required'): ?>
+                         <div class="form-error">Please fill in all fields.</div>
+                            <?php endif; ?>
             <form action="contact.php" method="POST" class="contact-form">
                 <div class="form-group">
                     <label>Name<span class="required">*</span></label>
