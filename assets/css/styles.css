@@ -270,3 +270,98 @@ body {
         order: -1;
     }
 }
+
+/* ===== Hero Mockup (SCRUM-18) ===== */
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.pos-mockup {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+}
+
+.pos-screen {
+    background: #020617;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    box-shadow:
+        0 18px 45px rgba(15, 23, 42, 0.9),
+        0 0 0 1px rgba(148, 163, 184, 0.08);
+}
+
+.pos-header {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.pos-body {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 0.75rem;
+}
+
+.pos-stats .stat {
+    background: #020617;
+    border-radius: 0.75rem;
+    padding: 0.5rem 0.7rem;
+    margin-bottom: 0.4rem;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.pos-stats .label {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.7rem;
+}
+
+.pos-stats .value {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.pos-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.chart-bar {
+    flex: 1;
+    border-radius: 999px;
+    background: linear-gradient(to top, var(--accent-strong), transparent);
+}
+
+.bar-1 { height: 36px; }
+.bar-2 { height: 52px; }
+.bar-3 { height: 28px; }
+.bar-4 { height: 44px; }
+
+.pos-receipt {
+    position: absolute;
+    right: -24px;
+    bottom: -20px;
+    background: #f9fafb;
+    color: #111827;
+    border-radius: 0.75rem;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.75rem;
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.85);
+    min-width: 160px;
+}
+
+.pos-receipt .line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.pos-receipt .total {
+    border-top: 1px dashed #9ca3af;
+    padding-top: 4px;
+    margin-top: 4px;
+    font-weight: 600;
+}
