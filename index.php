@@ -41,6 +41,42 @@
 
     <!-- Hero Section (SCRUM-17 content, SCRUM-18 image later) -->
     <section class="hero">
+        
+
+
+
+
+    <!-- Features Section (SCRUM-24) -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Built for Modern Retail</h2>
+            <p class="section-subtitle">
+                Everything you need to run your store smoothly, from the counter to the back office.
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>Inventory Management</h3>
+                    <p>Track stock in real time, set reorder alerts, and never run out of best-sellers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Sales Analytics</h3>
+                    <p>See what sells, when it sells, and who buys it with simple visual reports.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Easy Integration</h3>
+                    <p>Connect QuickPOS with payment providers, accounting tools, and your online store.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏬</div>
+                    <h3>Multi-Store Ready</h3>
+                    <p>Manage multiple locations from a single dashboard with unified reporting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
         <div class="container hero-grid">
             <div class="hero-content">
                 <h1>The Last POS System You’ll Ever Need</h1>
