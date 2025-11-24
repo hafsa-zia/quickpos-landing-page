@@ -120,6 +120,36 @@
             </div>
         </div>
     </section>
+<!-- Contact Section (SCRUM-34) -->
+    <section id="contact" class="contact">
+        <div class="container contact-grid">
+
+            <div>
+                <h2 class="section-title">Let’s Talk</h2>
+                <p class="section-subtitle">Tell us a bit about your business.</p>
+            </div>
+
+            <form action="contact.php" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label>Name<span class="required">*</span></label>
+                    <input type="text" name="name" required placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label>Email<span class="required">*</span></label>
+                    <input type="email" name="email" required placeholder="you@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label>Message<span class="required">*</span></label>
+                    <textarea name="message" rows="4" required placeholder="How can we help?"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary full-width">Submit</button>
+            </form>
+
+        </div>
+    </section>
         <div class="container hero-grid">
             <div class="hero-content">
                 <h1>The Last POS System You’ll Ever Need</h1>
