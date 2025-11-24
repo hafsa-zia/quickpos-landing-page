@@ -94,6 +94,7 @@ body {
         grid-template-columns: minmax(0, 1fr);
     }
 }
+
 /* Container */
 .container {
     width: 100%;
@@ -260,9 +261,11 @@ body {
     .main-nav {
         display: none;
     }
+
     .btn-outline {
         display: none;
     }
+
     .nav-toggle {
         display: inline-flex;
     }
@@ -335,6 +338,7 @@ body {
         grid-template-columns: minmax(0, 1fr);
         gap: 2.5rem;
     }
+
     .hero-image {
         order: -1;
     }
@@ -404,10 +408,21 @@ body {
     background: linear-gradient(to top, var(--accent-strong), transparent);
 }
 
-.bar-1 { height: 36px; }
-.bar-2 { height: 52px; }
-.bar-3 { height: 28px; }
-.bar-4 { height: 44px; }
+.bar-1 {
+    height: 36px;
+}
+
+.bar-2 {
+    height: 52px;
+}
+
+.bar-3 {
+    height: 28px;
+}
+
+.bar-4 {
+    height: 44px;
+}
 
 .pos-receipt {
     position: absolute;
@@ -433,4 +448,124 @@ body {
     padding-top: 4px;
     margin-top: 4px;
     font-weight: 600;
+}
+
+/* ===== Pricing Section (SCRUM-29) ===== */
+.pricing {
+    padding: 3rem 0 3.5rem;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.pricing-card {
+    background: rgba(15, 23, 42, 0.9);
+    padding: 1.75rem 1.5rem;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.9);
+    text-align: center;
+}
+
+.pricing-card.featured {
+    border-color: var(--accent);
+    background: radial-gradient(circle at top, rgba(56, 189, 248, 0.18), rgba(15, 23, 42, 0.95));
+    transform: translateY(-8px);
+}
+
+.badge {
+    background: rgba(56, 189, 248, 0.2);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.price {
+    font-size: 1.8rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.price span {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.3rem;
+    color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+    .pricing-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* ===== Pricing Section (SCRUM-29) ===== */
+.pricing {
+    padding: 3rem 0 3.5rem;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.pricing-card {
+    background: rgba(15, 23, 42, 0.9);
+    padding: 1.75rem 1.5rem;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.9);
+    text-align: center;
+}
+
+.pricing-card.featured {
+    border-color: var(--accent);
+    background: radial-gradient(circle at top, rgba(56, 189, 248, 0.18), rgba(15, 23, 42, 0.95));
+    transform: translateY(-8px);
+}
+
+.badge {
+    background: rgba(56, 189, 248, 0.2);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.price {
+    font-size: 1.8rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.price span {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.3rem;
+    color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+    .pricing-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
 }
