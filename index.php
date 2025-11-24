@@ -41,11 +41,6 @@
 
     <!-- Hero Section (SCRUM-17 content, SCRUM-18 image later) -->
     <section class="hero">
-        
-
-
-
-
     <!-- Features Section (SCRUM-24) -->
     <section id="features" class="features">
         <div class="container">
@@ -77,6 +72,54 @@
             </div>
         </div>
     </section>
+    <!-- Pricing Section (SCRUM-29) -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Simple, Transparent Pricing</h2>
+            <p class="section-subtitle">Choose the plan that fits your business today.</p>
+
+            <div class="pricing-grid">
+
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <p class="price">$29<span>/month</span></p>
+                    <ul class="pricing-features">
+                        <li>Single location</li>
+                        <li>Basic inventory</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline full-width">Choose Basic</a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <h3>Pro</h3>
+                    <p class="price">$59<span>/month</span></p>
+                    <ul class="pricing-features">
+                        <li>Up to 3 locations</li>
+                        <li>Advanced analytics</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary full-width">Choose Pro</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <p class="price">$99<span>/month</span></p>
+                    <ul class="pricing-features">
+                        <li>Unlimited locations</li>
+                        <li>Dedicated account manager</li>
+                        <li>24/7 support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline full-width">Talk to Sales</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
         <div class="container hero-grid">
             <div class="hero-content">
                 <h1>The Last POS System You’ll Ever Need</h1>
