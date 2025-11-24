@@ -1,8 +1,3 @@
-index.php
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,8 +53,39 @@ index.php
             </div>
 
             <!-- Hero image block will be filled in SCRUM-18 -->
-            <div class="hero-image hero-image-placeholder">
-                <p>Hero mockup coming in SCRUM-18…</p>
+            <div class="hero-image">
+                <div class="pos-mockup">
+                    <div class="pos-screen">
+                        <div class="pos-header">Today’s Overview</div>
+                        <div class="pos-body">
+                            <div class="pos-stats">
+                                <div class="stat">
+                                    <span class="label">Sales</span>
+                                    <span class="value">$2,450</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="label">Orders</span>
+                                    <span class="value">87</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="label">Top Item</span>
+                                    <span class="value">Latte</span>
+                                </div>
+                            </div>
+                            <div class="pos-chart">
+                                <span class="chart-bar bar-1"></span>
+                                <span class="chart-bar bar-2"></span>
+                                <span class="chart-bar bar-3"></span>
+                                <span class="chart-bar bar-4"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pos-receipt">
+                        <div class="line"><span>Latte x2</span><span>$8.00</span></div>
+                        <div class="line"><span>Croissant x3</span><span>$12.00</span></div>
+                        <div class="line total"><span>Total</span><span>$20.00</span></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
