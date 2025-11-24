@@ -13,5 +13,5 @@ if ($name === '' || $email === '' || $message === '') {
     exit;
 }
 
-header("Location: thank-you.html");
+header("Location: thankyou.html");
 exit;
