@@ -204,7 +204,7 @@
 
     <main class="placeholder-below-hero">
         <div class="container">
-            <p>Features, Pricing, Contact & Footer will be implemented in later stories.</p>
+           
         </div>
     </main>
 
