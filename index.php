@@ -129,6 +129,9 @@
                 <p class="section-subtitle">Tell us a bit about your business.</p>
             </div>
 
+            <?php if (isset($_GET['error']) && $_GET['error'] === 'required'): ?>
+                         <div class="form-error">Please fill in all fields.</div>
+                            <?php endif; ?>
             <form action="contact.php" method="POST" class="contact-form">
                 <div class="form-group">
                     <label>Name<span class="required">*</span></label>
@@ -232,5 +235,24 @@
             });
         });
     </script>
+     <!-- Footer (SCRUM-41) -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="logo-mark">Q</span>
+                <span class="logo-text">QuickPOS</span>
+            </div>
+
+            <div class="footer-links">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+
+            <div class="footer-copy">
+                © <?php echo date("Y"); ?> QuickPOS. All rights reserved.
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -602,3 +602,37 @@ body {
     border: 1px solid rgba(148,163,184,0.4);
     color: var(--text-main);
 }
+
+.form-error {
+    background: rgba(248,113,113,0.2);
+    padding: 0.7rem 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    color: #fecaca;
+    border: 1px solid rgba(248,113,113,0.5);
+}
+
+/* ===== Footer (SCRUM-41) ===== */
+.site-footer {
+    padding: 1.5rem 0;
+    background: #0f172a;
+    border-top: 1px solid var(--border-subtle);
+    margin-top: 2rem;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-muted);
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.footer-links a:hover {
+    color: var(--text-main);
+}
