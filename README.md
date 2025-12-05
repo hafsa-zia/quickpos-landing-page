@@ -1,4 +1,4 @@
-# QuickPOS – Landing Page (PHP)--
+# QuickPOS – Landing Page (PHP)----->
 
 A modern, responsive, single-page landing website for **QuickPOS**, built using **PHP, HTML, CSS**, and a professional Agile workflow using **Jira, GitHub, and Slack**.
 
