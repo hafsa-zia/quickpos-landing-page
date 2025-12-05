@@ -14,6 +14,7 @@ This project was developed following industry-standard practices:
 To run this project locally, you must use a **PHP server**.  
 There are 3 easy options:
 
+
 1️⃣ **Run Using PHP Built-In Server (Recommended)**
 
 ### Requirements:
